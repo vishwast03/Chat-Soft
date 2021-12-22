@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Chat Soft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="chat-icon.png" alt="icon" class="logo-img">
+            <span class="title">chat <span>soft</span></span>
+        </div>
+    </nav>
+    <section class="section-center">
+        <button class="toggle-btn">
+            <i class="fa fa-angle-right"></i>
+        </button>
+        <div class="active-user-display">
+            <h2>active now <i class="fa fa-circle"></i></h2>
+            <!-- <button class="close-sidebar">
+                <i class="fa fa-times"></i>
+            </button> -->
+            <ul class="active-users">
+                <!-- <li>Rohan</li>
+                <li>John</li> -->
+            </ul>
+        </div>
+        <div class="messenger">
+            <div class="message-container">
+                <ul class="messages">
+                    <!-- <li class="alert joined"><span>John</span> joined the chat</li>
+                    <li class="message sent"><span>John</span><br> Hello, Rohan</li>
+                    <li class="alert left"><span>Rohan</span> left the chat</li> -->
+                </ul>
+                <ul class="typing">
+                    <!-- <li class="message recieved"><span>Rohan</span><br> <div class="dots-3"></div></li> -->
+                </ul>
+            </div>
+            <form id="message-form">
+                <input type="text" id="message-input">
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
